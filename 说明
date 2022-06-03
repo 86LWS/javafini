@@ -1,0 +1,31 @@
+class.RRmain   主函数入口类
+
+class.Clogin   登录界面控制器类
+class.CLogin.onAction1  第一种模式游戏按钮监听函数
+class.CLogin.onAction2  第二种模式游戏按钮监听函数
+class.CLogin.onAction3  第三种模式游戏按钮监听函数
+
+class.CMaster  游戏主界面控制器类
+class.CMaster.initialize 初始化
+class.CMaster.onActive   下拉选择器动作监听，当一方在第二步确认步数后选择
+class.CMaster.onClickForCanvas  画布鼠标点击监听，计算选中的棋子
+class.CMaster.onMoveForCanvas   鼠标在画布上移动监听，弃
+class.CMaster.onKeyPress        监听按键，空格键开启游戏，上下左右对棋子移动
+class.CMaster.onPressForReset   重置按钮按下监听，重新开始游戏
+class.CMaster.onReleaseForReset 重置按钮松开监听
+class.CMaster.jishi             用以计时的类，thread
+class.CMaster.ani               用来计算棋子移动动画的类，thread
+
+class.FUNCanvas  画布绘画类
+class.FUNCanvas.draw  画布绘画函数
+
+class.MMap  地图数据类
+class.MMap.iniMap  初始化地图数据方法
+class.MMap.getMap  获取地图数据，不包含墙面
+class.MMap.GetWall 获取地图数据，仅墙面
+
+class.RRImage  图片素材管理类
+class.RRImage.RRImage  初始化，加载图片
+class.RRImage.getImageOdId  获取图片，根据图片id
+
+class.RRData  游戏数据类，静态
